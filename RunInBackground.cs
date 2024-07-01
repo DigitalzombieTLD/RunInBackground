@@ -14,8 +14,8 @@ namespace RunInBackground
         }
 
 		public override void OnSceneWasLoaded(int buildIndex, string sceneName)
-		{            
-           
+		{
+            Application.runInBackground = true;
         }
     }
 }

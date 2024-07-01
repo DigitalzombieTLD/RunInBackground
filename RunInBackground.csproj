@@ -47,6 +47,12 @@
 
     <!--This is the list of assemblies that the mod references. Most of these are unnecessary for normal mods, but are included here for completeness.-->
     <ItemGroup>
+        <Reference Include="Il2CppAK.Wwise.Unity.API">
+          <HintPath>..\..\..\..\Steam\steamapps\common\TheLongDark\MelonLoader\Il2CppAssemblies\Il2CppAK.Wwise.Unity.API.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppAK.Wwise.Unity.MonoBehaviour">
+          <HintPath>..\..\..\..\Steam\steamapps\common\TheLongDark\MelonLoader\Il2CppAssemblies\Il2CppAK.Wwise.Unity.MonoBehaviour.dll</HintPath>
+        </Reference>
         <Reference Include="Il2CppInterop.Common">
           <HintPath>W:\Steam\steamapps\common\TheLongDark\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
         </Reference>
