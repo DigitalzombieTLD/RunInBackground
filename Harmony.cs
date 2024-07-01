@@ -9,9 +9,7 @@ namespace RunInBackground
     {
         public static bool Prefix(ref GameManager __instance)
         {
-            GameManager.m_IsPaused = false;
-            GameManager.m_PausedWhenFocusLost = false;
-            return false;
+            return GameManager.m_IsPaused;
         }
     }
 
@@ -33,7 +31,9 @@ namespace RunInBackground
     {
         public static void Postfix(ref GameManager __instance)
         {
-            Application.runInBackground = true;           
+            Application.runInBackground = true;
+            GameManager.m_IsPaused = false;
+            GameManager.m_PausedWhenFocusLost = false;
         }
     }
 }
